@@ -1,0 +1,9 @@
+.nav_color{
+    background-color: #2C1131;
+    color: #ffffff;
+}
+.centered_title{
+    display: inline-block;
+    font-size: x-large;
+    text-align: center;
+}

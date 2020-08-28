@@ -1,0 +1,26 @@
+
+.main_background{
+    background-image: url("src\images\justicia.png");
+    height: 80vh;
+    
+}
+.search_bar{
+    border-radius: 1.2em 0 0 1.2em;
+    width: 50%;
+    height: 3em;
+    border: none;
+    padding-left: 1em;
+}
+.search_btn{
+    border-radius: 0 1.2em 1.2em 0;
+    border: none;
+    height: 3em;
+    padding-right: 1em;
+    background-color: white;
+}
+.search_btn:hover{
+    background-color: lightblue;
+}
+.strong_color{
+    color: #1DD3B0;
+}

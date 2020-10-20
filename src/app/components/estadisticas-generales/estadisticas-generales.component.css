@@ -1,0 +1,25 @@
+.main-container{
+    background-color: #2C1131;
+    width: 100%;
+
+}
+
+.title{
+    color: #1DD3B0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0%;
+}
+.info-card{
+    background-color: #F9FDFF;
+    width:40%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 2%;
+    padding: 2.5%;
+    margin: 5%;
+}
+.graph{
+    max-width: 100%;
+    max-height: 100%;
+}

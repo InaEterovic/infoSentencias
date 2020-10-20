@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "info-sentencias"
+  "defaultProject": "info-sentencias",
+  "cli": {
+    "analytics": false
+  }
 }

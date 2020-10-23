@@ -1,3 +1,19 @@
-<p>
-  estadisticas-delito works!
-</p>
+<div  class="main-container">
+  <div class="input-container">
+
+    <input 
+    type="text"  
+    list="lista-delitos"
+    [(ngModel)]="seleccionado"
+    (change)="delitoSeleccionado(seleccionado)" 
+    placeholder="Escriba un delito">
+
+    <datalist id="lista-delitos" >
+      <select>
+        <option *ngFor="let delito of delitos" [value]="delito">
+          {{delito}}
+        </option>
+      </select>
+    </datalist>  
+  </div> 
+</div>

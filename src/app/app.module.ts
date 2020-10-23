@@ -17,6 +17,7 @@ import { environment } from './../environments/environment';
 import { EstadisticasGeneralesComponent } from './components/estadisticas-generales/estadisticas-generales.component';
 import { EstadisticasDelitoComponent } from './components/estadisticas-delito/estadisticas-delito.component';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CommonModule } from '@angular/common';
     BrowserAnimationsModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

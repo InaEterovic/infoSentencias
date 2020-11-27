@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SentenciasService } from './../../services/sentencia.service';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -9,19 +8,18 @@ import { SentenciasService } from './../../services/sentencia.service';
 export class HomeComponent implements OnInit {
 
 sentencias: []
+textoIngresado:''
 
-  constructor(private sentenciasService: SentenciasService) {
+
+  constructor() {
 
    }
 
   ngOnInit() {
   }
- 
-  buscar(texto){
-    this.sentenciasService.queryWord(texto).subscribe((data) => { 
-      //this.sentencias = data; 
-      console.log(data)
-    })
+
+  buscar(ingresado){
+    this.textoIngresado = ingresado
   }
 
 }

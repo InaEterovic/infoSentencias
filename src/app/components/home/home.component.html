@@ -13,10 +13,10 @@
             type="text" 
             class="search_bar" 
             placeholder="Robo agravado"
-            #texto
+            (keyup)= buscar($event.target.value)
             >
 
-            <button type="submit" class="search_btn" (click)="buscar(texto.value)" >
+            <button type="submit" class="search_btn"  [routerLink] = "['/sentencias', textoIngresado]" >
                 <i class="fa fa-search"></i>
             </button>
         

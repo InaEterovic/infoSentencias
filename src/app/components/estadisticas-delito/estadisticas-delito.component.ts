@@ -1,6 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 import { DELITOS } from './../../constants/delitos';
+import { DelitosService } from './../../services/delitos.service';
+
+export interface delito{
+  name: string,
+  wordNetwork: string
+}
 
 @Component({
   selector: 'app-estadisticas-delito',
@@ -10,18 +16,20 @@ import { DELITOS } from './../../constants/delitos';
 
 export class EstadisticasDelitoComponent implements OnInit {
   
-   delitos = DELITOS;
+   lista_delitos = DELITOS;
    seleccionado='';
+   delito
    
    
-  constructor() { }
+   
+  constructor(private delitosService: DelitosService) { }
 
   ngOnInit() {
   }
 
   delitoSeleccionado(seleccionado){
-    console.log(seleccionado)
-    console.log(this.seleccionado)
+    this.delitosService.getByDelito(seleccionado).subscribe((data) => { 
+      this.delito = data; })
   }
 
 

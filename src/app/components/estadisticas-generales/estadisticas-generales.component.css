@@ -10,6 +10,10 @@
     font-weight: bold;
     margin-top: 0%;
 }
+.row-container{
+    display: flex;
+  justify-content: center;
+}
 .info-card{
     background-color: #F9FDFF;
     width:40%;
@@ -17,8 +21,10 @@
     text-align: center;
     border-radius: 2%;
     padding: 2.5%;
-    margin: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
 }
+
 .graph{
     max-width: 100%;
     max-height: 100%;

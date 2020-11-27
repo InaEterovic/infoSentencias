@@ -10,10 +10,18 @@
 
     <datalist id="lista-delitos" >
       <select>
-        <option *ngFor="let delito of delitos" [value]="delito">
+        <option *ngFor="let delito of lista_delitos" [value]="delito">
           {{delito}}
         </option>
       </select>
     </datalist>  
   </div> 
+  <div class="info-card"  *ngFor="let d of delito"> 
+    <img class="graph" src= {{d.wordNetwork}}>
+    <h4>Red de terminos</h4>
+  </div>
+    <div>
+
+    </div>
+ 
 </div>

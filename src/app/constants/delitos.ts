@@ -3,7 +3,6 @@ export const DELITOS = [
     'aborto',
     'abuso de confianza',
     'abuso de firma en blanco',
-    'abuso deshonesto',
     'abuso sexual',
     'agio',
     'agravación', 

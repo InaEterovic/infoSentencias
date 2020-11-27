@@ -18,6 +18,7 @@ import { EstadisticasGeneralesComponent } from './components/estadisticas-genera
 import { EstadisticasDelitoComponent } from './components/estadisticas-delito/estadisticas-delito.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ListaSentenciasComponent } from './components/lista-sentencias/lista-sentencias.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     HomeComponent,
     EstadisticasGeneralesComponent,
-    EstadisticasDelitoComponent
+    EstadisticasDelitoComponent,
+    ListaSentenciasComponent
     
   ],
   imports: [

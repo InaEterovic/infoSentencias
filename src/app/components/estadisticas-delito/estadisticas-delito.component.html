@@ -16,9 +16,15 @@
       </select>
     </datalist>  
   </div> 
-  <div class="info-card"  *ngFor="let d of delito"> 
-    <img class="graph" src= {{d.wordNetwork}}>
-    <h4>Red de terminos</h4>
+  <div   *ngFor="let datos of delito"> 
+    <div class="info-card"> 
+      <img class="graph" src= {{datos.wordNetwork}}>
+      <h4>Red de terminos</h4>
+    </div>
+    <div class="info-card"> 
+      <img class="graph" src= {{datos.wordCloud}}>
+      <h4>Nube de palabras </h4>
+    </div>
   </div>
     <div>
 

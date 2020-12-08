@@ -19,6 +19,9 @@ import { EstadisticasDelitoComponent } from './components/estadisticas-delito/es
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ListaSentenciasComponent } from './components/lista-sentencias/lista-sentencias.component';
+import { DetalleSentenciaComponent } from './components/detalle-sentencia/detalle-sentencia.component';
+import { AboutComponent } from './components/about/about.component';
+import { ModalSentenciaComponent } from './components/modal-sentencia/modal-sentencia.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { ListaSentenciasComponent } from './components/lista-sentencias/lista-se
     HomeComponent,
     EstadisticasGeneralesComponent,
     EstadisticasDelitoComponent,
-    ListaSentenciasComponent
+    ListaSentenciasComponent,
+    DetalleSentenciaComponent,
+    AboutComponent,
+    ModalSentenciaComponent
     
   ],
   imports: [

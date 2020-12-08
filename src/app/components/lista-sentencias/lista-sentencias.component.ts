@@ -17,7 +17,6 @@ export class ListaSentenciasComponent implements OnInit {
     this.texto=this._Activatedroute.snapshot.paramMap.get("texto");
     this.sentenciasService.queryWord(this.texto).subscribe((data) => { 
        this.sentencias= data
-       console.log(this.sentencias)
      })
 
   }

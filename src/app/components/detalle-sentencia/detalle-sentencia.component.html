@@ -1,0 +1,24 @@
+<div *ngFor="let contenido of sentencia">
+    <div class="side-container">
+    <h2>{{contenido.Cod}}</h2>
+    <h5>{{contenido.fecha}}</h5>
+    <h3>Palabras clave</h3>
+    <span *ngFor="let palabra of contenido.keywords" class="keyword"> {{palabra}} </span>
+    <h3>Hechos y delitos mencionados</h3>
+    <p>{{contenido.delitos}} {{contenido.hechos}}</p>
+    <h3>Fallo </h3>
+    <p>{{contenido.Fallo}}</p>
+    </div>
+    <div  class="image-container">
+        <img src = "{{'https://wordcloudsentencia.s3.amazonaws.com/'+contenido._id.$oid+'.png'}}">
+        {{contenido._id.$oid}} 
+    </div>
+    <div class="button-container">
+        <button class="w3-button w3-round w3-teal w3-margin-bottom" (click)="mostrarSentencia()" >
+            Mostrar sentencia completa
+        </button>
+    </div>
+    <div *ngIf="modalActivo">
+        <app-modal-sentencia [sentencia]="contenido.sentencia" (closedWasClicked)="cerrar()"></app-modal-sentencia>
+    </div>
+</div>

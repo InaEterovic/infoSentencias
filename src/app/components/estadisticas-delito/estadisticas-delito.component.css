@@ -16,13 +16,14 @@ input{
 }
 .info-card{
     background-color: #F9FDFF;
-    width:50%;
+    width:40%;
     display: inline-block;
     text-align: center;
     border-radius: 2%;
     margin-top: 5%;
     margin-left: 5%;
     margin-bottom: 3%;
+    display: inline-block;
 }
 
 .graph{

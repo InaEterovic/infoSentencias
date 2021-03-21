@@ -6,18 +6,22 @@
 .sentencia-container{
     background-color: aliceblue;
     border-radius: 1em;
-    margin: 0 2em 2em 2em;
-  
+    margin: 0 2em 2em 2em; 
 
 }
 
 
 .field-container{
     display: inline-block;
+    overflow-wrap: break-word;
     margin-left: 2em;
-    padding-bottom: 1em;
+    width: 25%;
+    padding: 0.5em;
 }
 .label{
     color: #782088;
     font-weight: bold;
+}
+.crime-lis{
+    width:30%;
 }

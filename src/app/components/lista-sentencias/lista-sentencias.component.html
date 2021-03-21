@@ -11,7 +11,7 @@
             <p>{{sentencia.fecha}}</p>
         </div>
         <div class="field-container">
-           <p>{{sentencia.delitos}} {{sentencia.hechos}}</p> 
+           <p class="crime-list">{{sentencia.delitos}}, {{sentencia.hechos}}</p> 
         </div>
         <button class="w3-button w3-round w3-teal w3-margin-left"  [routerLink] = "['/sentencia-detalle', sentencia.id]">Ver más</button>
     </div>

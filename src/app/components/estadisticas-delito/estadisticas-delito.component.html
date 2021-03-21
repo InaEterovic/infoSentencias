@@ -16,8 +16,13 @@
       </select>
     </datalist>  
   </div> 
-  <div   *ngFor="let datos of delito"> 
-    <div class="info-card"> 
+  <div class="definition-card" *ngIf="delito">
+    <p>
+      La nube de palabras muestra las palabras mas frecuentes de mayor tamaño, en la red de terminos los enlaces mas oscuro indican que ambas palabras estan relacionadas fuertemente
+   </p>  
+  </div>
+  <div  class="cards-container" *ngFor="let datos of delito"> 
+    <div class="info-card small-image"> 
       <img class="graph" src= {{datos.wordNetwork}}>
       <h4>Red de terminos</h4>
     </div>

@@ -1,4 +1,4 @@
-<div *ngFor="let contenido of sentencia">
+<div class="main-container" *ngFor="let contenido of sentencia">
     <div class="side-container">
     <h2>{{contenido.Cod}}</h2>
     <h5>{{contenido.fecha}}</h5>
@@ -11,7 +11,6 @@
     </div>
     <div  class="image-container">
         <img src = "{{'https://wordcloudsentencia.s3.amazonaws.com/'+contenido._id.$oid+'.png'}}">
-        {{contenido._id.$oid}} 
     </div>
     <div class="button-container">
         <button class="w3-button w3-round w3-teal w3-margin-bottom" (click)="mostrarSentencia()" >

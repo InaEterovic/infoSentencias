@@ -1,5 +1,5 @@
 <div class="main-container">
-
+    <div class="loader" *ngIf='!sentencias'></div>
     
     <div *ngFor="let sentencia of sentencias" class="sentencia-container">
         <div class="field-container">
